@@ -26,7 +26,7 @@ header h1{
 }
 
 main{
-    padding: 250px 250px;
+    padding: 250px 290px;
 }
 
 .card{
@@ -59,10 +59,13 @@ button a{
     text-align: center;
 }
 
-/* div i{
-    position: relative;
+div i{
+    position: absolute;
+    top: 20px;
+    left: 5px;;
     color: #CC2424;
-} */
+    font-size: 25px;
+}
 
 .fija{
     position: relative;
