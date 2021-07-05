@@ -8,52 +8,63 @@ body{
 }
 
 header{
-    position: fixed;
     width: 100%;
 }
 
 header h3{
     padding: 5px 10px;
-    background: #1CD1B0;
+    background: #D1891C;
     font-size: 15px;
 }
 
 header h1{
     padding: 30px 20px;
     background: #00669F;
-    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
-
+    font-size: 30px;
+    color: white;
 }
 
 main{
-    padding: 250px 210px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .card{
-    position:relative;
-    display: inline-block;
-    width: 285px;
-    background: #F3F3F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-bottom: 20px;
-    padding-right: 15px ;
-    z-index: -1;
+    position: relative;
+    background: #f3f3f3;
+    width: 300px;
+    height:550px;
+    margin: 100px 0;
+    text-align: center;
+    
 }
 
 .card p{
     padding: 10px 0px 20px 0px;
 }
 
+.card h2{
+    padding-top: 60px;
+}
+
+.card .bground{
+    border-radius: 5%;
+}
+
+
 button{
     background: #00669F;
     padding: 10px 25px 10px 25px;
+
 }
 
 button a{
     text-decoration: none;
     color: white;
-
 }
+
 .container{
     padding: 2px 16px;
     text-align: center;
@@ -68,9 +79,10 @@ div i{
 }
 
 .fija{
-    position: relative;
-    left: 90px;
-    top: -50px;
+    position: absolute;
+    left: calc(50% - (125px / 2));
+    top: calc(194px - (125px / 2));
+    width: 125px;
     border-radius: 50%;
 }
 
@@ -78,5 +90,31 @@ footer {
     background-color: #00669F;
     color: white;
     padding: 5px 10px;
+    font-size: 10px;
+}
+
+/* Media query */
+
+
+@media (max-width: 760px) {
+    main{
+    }
+
+    main div {
+        width: 45%;
+    }
 
 }
+
+
+@media (max-width: 420px) {
+    main{
+        height: 200vh;
+    }
+
+    main div {
+        width: 95%;
+    }
+
+}
+
